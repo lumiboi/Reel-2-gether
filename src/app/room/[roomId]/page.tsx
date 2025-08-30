@@ -61,8 +61,11 @@ export default function RoomPage() {
     useEffect(() => {
         if (!user || !roomId) return;
         const roomDocRef = doc(db, 'rooms', roomId);
-        const participantData: Participant = { uid: user.uid, name: user.displayName || user.email || 'Misafir', photoURL: user.photoURL || undefined };
-        updateDoc(roomDocRef, { participants: arrayUnion(participantData) });
+          const participantData = {
+            uid: user.uid,
+            name: user.displayName || user.email || "Misafir", // Eğer ikisi de yoksa "Misafir" yaz
+            photoURL: user.photoURL || null // Eğer photoURL yoksa, undefined yerine null gönder
+        };
         const handleBeforeUnload = () => { updateDoc(roomDocRef, { participants: arrayRemove(participantData) }); };
         window.addEventListener('beforeunload', handleBeforeUnload);
         return () => {
