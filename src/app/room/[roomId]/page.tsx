@@ -104,7 +104,7 @@ export default function RoomPage() {
     }
 
     return (
-        <div className="flex flex-col h-screen bg-black bg-dot-white/[0.1] text-white p-4 gap-4 overflow-hidden">
+        <div className="flex flex-col h-screen bg-black bg-dot-white/[0.1] text-white p-4 gap-4 overflow-y-auto">
             <motion.header initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="flex-shrink-0 flex justify-between items-center z-20">
                 <Link href="/" className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"><ArrowLeft size={18}/> Lobiye Dön</Link>
                 <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">ReelTogether Odası</h1>
