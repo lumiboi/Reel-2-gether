@@ -6,7 +6,7 @@ Kendi **reel havuzundan** rastgele içerik çekip arkadaşlarla **senkron** şek
 
 ---
 
-## ✨ Özellikler
+##  Özellikler
 - **Rastgele Reel**: Uygulamanın reel havuzundan tek tıkla rastgele içerik başlatma.
 - **Senkron Oynatma**: Oda içindeki tüm kullanıcılar için play/pause/seek hareketleri eşzamanlıdır.
 - **Oda Sistemi**: Oda oluşturma, odaya kod/link ile katılma.
@@ -18,7 +18,7 @@ Kendi **reel havuzundan** rastgele içerik çekip arkadaşlarla **senkron** şek
 
 ---
 
-## 🧩 Teknolojiler
+## Teknolojiler
 - **Next.js + TypeScript** – modern, hızlı, App Router yapısı  
 - **Tailwind CSS** – komponentleri hızlıca stillendirmek için  
 - **Gerçek Zamanlı** – (örnek) Firebase/Firestore veya WebSocket tabanlı senkronizasyon
@@ -28,7 +28,7 @@ Kendi **reel havuzundan** rastgele içerik çekip arkadaşlarla **senkron** şek
 
 ---
 
-## 🚀 Hızlı Başlangıç
+##  Başlangıç
 ### 1) Kurulum
 ```bash
 # projeyi klonla
@@ -64,7 +64,7 @@ Tarayıcıdan `http://localhost:3000` adresine gidin.
 
 ---
 
-## 🧪 Kullanım
+##  Kullanım
 1. "Oda oluştur" ile yeni bir oda açın.  
 2. Odadaki davet linkini veya kodu arkadaşlarınızla paylaşın.  
 3. "Rastgele reel" butonuyla havuzdan içerik çekin.  
@@ -73,7 +73,7 @@ Tarayıcıdan `http://localhost:3000` adresine gidin.
 
 ---
 
-## 🗃️ Proje Yapısı (özet)
+##  Proje Yapısı (özet)
 ```
 Reel-2-gether/
 ├─ public/                # statik dosyalar
@@ -93,7 +93,7 @@ Reel-2-gether/
 
 ---
 
-## 🧱 Mimarî Notları
+## Mimarî Notları
 - **Senkronizasyon**: Tek doğruluk kaynağı (host veya sunucu) üzerinden oynatma durumunu yayınlayın.  
 - **Oda Durumu**: Oda kimliği (roomId), odaya katılan kullanıcılar, oynatma zamanı/durumu, aktif reel kimliği.  
 - **Dayanıklılık**: Oda durumu kalıcı bir store’a (Firestore/Redis) yazılabilir; kullanıcı ayrılıp dönse dahi kaldığı yerden devam.  
@@ -102,14 +102,14 @@ Reel-2-gether/
 
 ---
 
-## 🔐 Telif & İçerik
+##  Telif & İçerik
 - Reel havuzuna eklenen videoların paylaşım ve kullanım koşulları içerik sahiplerine aittir.  
 - Sadece **izinli** ve **uygun lisanslı** içerikleri havuza ekleyin.  
 - Kullanıcı gizliliği ve KVKK/GDPR gereklilikleri için açık ve erişilebilir bir gizlilik politikası sağlayın.
 
 ---
 
-## 🛠️ Komutlar
+## Komutlar
 ```bash
 # geliştirme
 npm run dev
@@ -124,7 +124,7 @@ npm run lint
 
 ---
 
-## 🗺️ Yol Haritası
+## Yol Haritası
 - [ ] Oda ayarları: sadece host kontrolü / ortak kontrol modu  
 - [ ] Emoji tepkileri ve izleme sırasına ekleme (queue)  
 - [ ] Oda geçmişi ve yeniden oynat  
@@ -135,16 +135,11 @@ npm run lint
 
 ---
 
-## 🤝 Katkı
+## Katkı
 Issue açabilir, PR gönderebilirsiniz. Kod stili için ESLint kuralları ve TypeScript tiplerini takip edin.
 
 ---
 
-## 📄 Lisans
-Uygun bir açık kaynak lisansı ekleyin (örn. MIT). `LICENSE` dosyasını repo köküne ekleyin.
-
----
-
-## 🙏 Teşekkürler
+## Teşekkürler
 Bu projeye ilham veren açık kaynak kütüphaneler ve topluluklara teşekkürler.
 
